@@ -1,0 +1,11 @@
+os: linux
+version: 0.0
+files: 
+  - 
+    destination: /home/ubuntu/sh-etl
+    source: /
+hooks:
+  ApplicationStart:
+    - location: mso/runapp.sh
+      timeout: 300
+      runas: ubuntu
